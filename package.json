@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
-    "cpr": "^3.0.1"
+    "cpr": "^3.0.1",
+    "jquery": "^3.6.1"
   },
   "scripts": {
     "start": "node deployAssets.js"
