@@ -7,6 +7,10 @@ application:
 		*: App\*Module\Presenters\*Presenter
 
 
+constants:
+	APPNAME: ''
+
+
 session:
 	expiration: 14 days
 
