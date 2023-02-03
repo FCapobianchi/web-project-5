@@ -1,7 +1,8 @@
+.DS_Store
 config/local.neon
 node_modules
 package-lock.json
 composer.lock
 log/*
 cache/*
-.DS_Store
+www/assets/bootstrap-italia

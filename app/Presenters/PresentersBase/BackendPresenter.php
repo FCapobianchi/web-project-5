@@ -26,7 +26,7 @@ class BackendPresenter extends Nette\Application\UI\Presenter {
         $this->template->appname = APPNAME;
         $this->template->section = strtolower($this->name);
         $this->template->page = ($this->action!="default")?$this->action:"";
-        $this->cookies = $cookies = $this->getHttpRequest()->getCookies();
+        $this->cookies = $this->getHttpRequest()->getCookies();
 
         bdump($this->template->section);
         bdump($this->template->page);

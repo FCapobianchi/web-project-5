@@ -1,4 +1,4 @@
-Nette Web Project wirj bootstrap 5
+Nette Web Project with Bootstrap Italia
 =================
 
 This is a simple, skeleton application using the [Nette](https://nette.org). This is meant to
@@ -14,7 +14,7 @@ If you like Nette, **[please make a donation now](https://nette.org/donate)**. T
 Requirements
 ------------
 
-- Web Project for Nette 3.1 requires PHP 7.2
+- Web Project for Nette 3.1 requires PHP >= 7.4
 [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com))
 
 
@@ -32,7 +32,7 @@ download it following [the instructions](https://doc.nette.org/composer). Then u
 
 
 Make directories `temp/` and `log/` writable.
-
+Comment .gitignore www/assets/bootstrap-italia
 
 Web Server Setup
 ----------------
