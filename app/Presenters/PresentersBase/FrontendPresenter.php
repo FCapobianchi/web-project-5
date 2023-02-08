@@ -16,6 +16,7 @@ class FrontendPresenter extends Nette\Application\UI\Presenter {
     }
 
     protected function beforeRender(): void {
+        //$this->setLayout(__DIR__.'/templates/@cover.latte');
         $this->setLayout(__DIR__.'/templates/@frontend.latte');
     }
 

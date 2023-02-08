@@ -3,42 +3,37 @@
 <head>
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="Nette web project with bootstrap 5">
+    <meta name="description" content="Nette web project with bootstrap-italia 5">
     <meta name="author" content="Fabiano Capobianchi">
-	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette web project with bootstrap italia</title>
-	<link href="{$basePath}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<link href="{$basePath}/assets/css/cover.css" rel="stylesheet">
+
+	<title>{ifset title}{include title|stripHtml} | {/ifset}Nette web project with bootstrap-italia italia</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="{$basePath}/assets/bootstrap-italia/css/bootstrap-italia.min.css" rel="stylesheet">
+
+	{include 'Common/favicons.latte'}
+	{include 'Common/meta.latte'}
+	{include 'Common/analytics.latte'}
 
 </head>
 
-<body class="d-flex h-100 text-center text-bg-dark">
+<body>
     
-	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-		<header class="mb-auto">
-			<div>
-			<h3 class="float-md-start mb-0">Cover</h3>
-			<nav class="nav nav-masthead justify-content-center float-md-end">
-				<a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#">Home</a>
-				<a class="nav-link fw-bold py-1 px-0" href="#">Features</a>
-				<a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-			</nav>
-			</div>
-		</header>
-	
-		<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
+	{include 'Common/header.latte'}
 
-		<main class="px-3">
-			{include content}
-		</main>
+	<div n:foreach="$flashes as $flash" n:class="flash, $flash->type">{$flash->message}</div>
 
-		<footer class="mt-auto text-white-50">
-			<p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
-		</footer>
+	<div class="container my-4">
+		{include content}
 	</div>
 
-	<script src="{$basePath}/assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="{$basePath}/assets/jquery/jquery.min.js"></script>
-	
+	{include 'Common/footer.latte'}
+
+	<script src="{$basePath}/assets/bootstrap-italia/js/bootstrap-italia.min.js"></script>
+	<script>bootstrap.loadFonts({$basePath}+"/assets/bootstrap-italia/fonts");</script>
+
+	{include 'Common/notifications.latte'}
+
 	{block scripts} {/block}
     
 </body>
