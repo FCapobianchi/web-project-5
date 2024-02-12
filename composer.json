@@ -1,7 +1,7 @@
 {
-	"name": "nette/web-project-5",
-	"description": "Nette: Standard Web Project",
-	"keywords": ["nette"],
+	"name": "juice/web-project-5",
+	"description": "Nette: Standard Web Project with bootstrap italia 2",
+	"keywords": ["nette","bootstrap italia"],
 	"type": "project",
 	"license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"require": {
