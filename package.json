@@ -1,0 +1,23 @@
+{
+  "name": "web-project-5",
+  "description": "Custom Nette project with Bootstrap Italia",
+  "author": "FCapobianchi <fabiano@juicenet.it>",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FCapobianchi/web-project-5.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FCapobianchi/web-project-5/issues"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "dependencies": {
+    "bootstrap-italia": "^2.3.2",
+    "cpr": "^3.0.1"
+  },
+  "scripts": {
+    "start": "node deployAssets.js"
+  }
+}
