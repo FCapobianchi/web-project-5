@@ -7,12 +7,12 @@
 
 declare(strict_types=1);
 
-namespace Nette\Caching\Storages;
+namespace Nette\Application\Attributes;
+
+use Attribute;
 
 
-/**
- * @deprecated
- */
-class NewMemcachedStorage extends MemcachedStorage
+#[Attribute(Attribute::TARGET_PROPERTY)]
+class Parameter
 {
 }

@@ -1,11 +1,11 @@
 {
-	"name": "juice/web-project-5",
-	"description": "Nette: Standard Web Project with bootstrap italia 2",
+	"name": "fcapobianchi/web-project-5",
+	"description": "Standard nette Web Project with bootstrap italia 2",
 	"keywords": ["nette","bootstrap italia"],
 	"type": "project",
 	"license": ["MIT", "BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
 	"require": {
-		"php": ">= 7.2",
+		"php": ">= 7.4",
 		"nette/application": "^3.1",
 		"nette/bootstrap": "^3.1",
 		"nette/caching": "^3.1",
